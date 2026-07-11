@@ -26,3 +26,7 @@ body{padding-top:86px}header{position:fixed;top:0;left:0;right:0;z-index:20;back
 /* Comfortable spacing for process cards */
 .steps{gap:12px}.steps article{padding:22px;border-radius:14px}
 @media(max-width:760px){.steps{gap:12px}.steps article{padding:18px}}
+
+/* FAQ accordion motion */
+.faq details{overflow:hidden}.faq summary b{display:inline-grid;place-items:center;flex:0 0 24px;width:24px;height:24px;line-height:1;transform:rotate(0);transform-origin:center;transition:transform .35s cubic-bezier(.22,.61,.36,1),color .25s ease}.faq details[open] summary b{transform:rotate(45deg);color:var(--t)}.faq details p{display:block!important;max-height:0;margin:0;opacity:0;overflow:hidden;transform:translateY(-6px);transition:max-height .48s cubic-bezier(.22,.61,.36,1),opacity .32s ease,transform .4s ease,margin .4s ease}.faq details[open] p{max-height:180px;margin:12px 0 3px;opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.faq summary b,.faq details p{transition:none}}
