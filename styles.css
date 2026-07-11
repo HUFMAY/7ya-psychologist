@@ -22,3 +22,7 @@ body{padding-top:86px}header{position:fixed;top:0;left:0;right:0;z-index:20;back
 /* Calm reveal motion */
 .motion-ready .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}.motion-ready .reveal.is-visible{opacity:1;transform:none}.motion-ready .reveal-item{opacity:0;transform:translateY(18px);transition:opacity .58s cubic-bezier(.22,.61,.36,1),transform .58s cubic-bezier(.22,.61,.36,1);transition-delay:var(--reveal-delay,0ms)}.motion-ready .reveal.is-visible .reveal-item,.motion-ready .reveal-item.is-visible{opacity:1;transform:none}.cards article,.steps article,.feelings span,.certificate-slide,.review-slide{will-change:transform}.cards article:hover,.steps article:hover{transform:translateY(-4px);box-shadow:0 14px 34px #26313a10;transition:transform .25s ease,box-shadow .25s ease}.feelings span{transition:transform .25s ease}.feelings span:hover{transform:translateY(-3px)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.motion-ready .reveal,.motion-ready .reveal-item{opacity:1;transform:none;transition:none}.cards article,.steps article,.feelings span,.certificate-slide,.review-slide,.button{transition:none!important}.cards article:hover,.steps article:hover,.feelings span:hover,.button:hover{transform:none}}
+
+/* Comfortable spacing for process cards */
+.steps{gap:12px}.steps article{padding:22px;border-radius:14px}
+@media(max-width:760px){.steps{gap:12px}.steps article{padding:18px}}
