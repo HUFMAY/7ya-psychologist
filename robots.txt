@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://психолог-колупаева.рф/sitemap.xml
